@@ -6,8 +6,12 @@ edition = "2024"
 [dependencies]
 clap = { version = "4", features = ["derive"] }
 codex = { package = "codex-core", git = "https://github.com/openai/codex.git", rev = "f82e36592278a0a782fb0d0fc97e5fa10e832ac2" }
+codex-arg0 = { git = "https://github.com/openai/codex.git", rev = "f82e36592278a0a782fb0d0fc97e5fa10e832ac2" }
+codex-core-api = { git = "https://github.com/openai/codex.git", rev = "f82e36592278a0a782fb0d0fc97e5fa10e832ac2" }
+codex-protocol = { git = "https://github.com/openai/codex.git", rev = "f82e36592278a0a782fb0d0fc97e5fa10e832ac2" }
 serde = { version = "1", features = ["derive"] }
 thiserror = "2"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "signal", "time"] }
 
 [dev-dependencies]
 anyhow = "1"
